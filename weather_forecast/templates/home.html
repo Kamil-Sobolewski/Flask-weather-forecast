@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container mt-5">
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.location(placeholder="Your location") }}
+        {{ form.submit }}
+    </form>
+  </div>
+{% endblock content %}
